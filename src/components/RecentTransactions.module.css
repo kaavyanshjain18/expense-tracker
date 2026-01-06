@@ -1,0 +1,62 @@
+.container {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 1.5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.description {
+    font-weight: 500;
+    color: var(--foreground);
+}
+
+.date {
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+}
+
+.amount {
+    font-weight: 600;
+}
+
+.income {
+    color: var(--success);
+}
+
+.expense {
+    color: var(--foreground);
+}
